@@ -10,7 +10,7 @@
     if(platform === 'win32'){
       cmds.unshift('/c');
     }
-    return spawn(base, cmd, options);
+    return spawn(base, cmds, options);
   };
 
 })(exports);
