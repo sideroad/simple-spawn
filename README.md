@@ -5,10 +5,17 @@ but command arguments is not instinctive and we should change arguments on windo
 
 This library wrapping this complexity and provide simple interface.
 
+# Install
+```shell
+npm install simple-spawn
+```
 
+# Usage
+```js
 var spawn = require('simple-spawn').spawn,
     child = spawn('npm config ls');
 
 child.stdout.on('data', function(data){
     process.stdout.write(''+data);
 }
+```
